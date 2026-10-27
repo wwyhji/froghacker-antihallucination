@@ -29,6 +29,18 @@
 P(系统输出错误) ≤ min(生成式不完备, 判别式遗漏, 信息守恒误判, 双向汇合假匹配)
 ```
 
+## 🗺️ 蛙客开源仓库导航
+
+蛙客平台按能力拆为五个独立仓库，本仓库是其中的**算法抗幻觉模块**：
+
+| 仓库 | 定位 |
+|------|------|
+| [froghacker-defense](https://github.com/wwyhji/froghacker-defense) | 防御端（蓝队）：检测规则 / 蜜罐 / IDS / 防火墙 / 加固 |
+| [froghacker-reveng](https://github.com/wwyhji/froghacker-reveng) | 逆向关联追踪引擎：APK 逆向找 key |
+| [froghacker-ant-swarm](https://github.com/wwyhji/froghacker-ant-swarm) | 蚁群协作调度底座：多 Agent 任务分配 |
+| **[froghacker-antihallucination](https://github.com/wwyhji/froghacker-antihallucination)** | 算法抗幻觉：确定性验证 + 事实断言裁决（本仓库） |
+| [froghacker-audit](https://github.com/wwyhji/froghacker-audit) | 代码静态安全审计：regex + AST 污点 |
+
 ## ✨ 特性
 
 - **四层确定性验证** — 结构化模板 / 纯算法判别 / 信息守恒安全阀 / 乘积衰减，全部无 LLM 参与
